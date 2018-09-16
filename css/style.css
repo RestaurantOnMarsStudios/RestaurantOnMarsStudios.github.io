@@ -359,8 +359,9 @@ color: #fff;
  	text-align:center;
 	margin-bottom:30px;
 	height:250px;
-	width:350px;
-	overflow:hidden;
+	width:100%;
+	max-width:350px;
+	/* overflow:hidden; */
 	float:left;
 	padding:0;
 }
