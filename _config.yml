@@ -13,14 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Restaurant On Mars Studios
+title: ROMStudios
 email: restaurantonmars@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Restaurant On Mars Studios is a new indie video game development company based in Alabama and Pennsylvania!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rom_studios
-github_username:  RestaurantOnMarsStudios
+# github_username:  RestaurantOnMarsStudios
+# instagram_username:  restaurantonmarsstudios
+facebook_username: ROMStudios
+youtube_username: channel/UCcgSloWZyozu_e-q2iHlaFA
+linkedin_username: restaurant-on-mars-studios
+
 
 # Build settings
 markdown: kramdown
