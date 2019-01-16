@@ -26,7 +26,7 @@ Here you will find information about our published games below, as well as [our 
     <img src="\custom-theme-images/BoxesLogo-long.png" style="margin-bottom:10px;"/>
 </a>   -->
 
-[![BOXES: Drone Delivery](\custom-theme-images/BoxesLogo-long.png)](https://play.google.com/store/apps/details?id=com.RestaurantOnMarsStudios.BOXESDroneDelivery&hl=en_US_)  
+[![BOXES: Drone Delivery](\site-assets/BoxesLogo-long.png)](https://play.google.com/store/apps/details?id=com.RestaurantOnMarsStudios.BOXESDroneDelivery&hl=en_US_)  
 
 
 BOXES: Drone Delivery is the first game from Restaurant On Mars Studios, where you play as a box to navigate obstacles in the air. Use your box-moving skills to pass the three levels full of power-ups, bulky birds, and flying pirates, then prove your mastery by making the leaderboards in Infinity mode!
