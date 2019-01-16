@@ -6,10 +6,19 @@ layout: default
 
   {{ content }}
 
-  {%- if site.categories.mainBlog.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  {%- if site.categories.gameDesigns.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Game Design Sketches" }}</h2>
+    <h5>These design sketches are made publicly available for any personal or commercial projects. 
+      <br>
+      If you end up using any of these ideas, it is appreciated to place the following attribution in the credits of your game:   
+      <br>
+      <div class="codeSnippet">
+        <small><b>Game Design Sketch Provided by Restaurant On Mars Studios LLC (restaurantonmarsstudios.github.io)</b></small>
+      </div>
+    </h5>
+    <hr>
     <ul class="post-list">
-      {%- for post in site.categories.mainBlog -%}
+      {%- for post in site.categories.gameDesigns -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>

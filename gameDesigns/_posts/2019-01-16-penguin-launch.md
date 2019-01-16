@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Penguin Launch - Game Design"
+layout: design-sketch-post
+title:  "Penguin Launch"
 date:   2019-01-16
-categories: game designs
+categories: design sketches
 ---
 
 Inspired by MiniClips games. You play as a penguin, and you're catapulted through the air in a top down perspective. 

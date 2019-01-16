@@ -6,3 +6,12 @@
 img {
     padding-bottom: 10px;
 }
+
+.codeSnippet {
+    padding: 10px;
+    margin: 10px;
+    margin-left:0px;
+    display: inline-block;
+    background-color: #EEE;
+    border-radius: 10px;
+}
