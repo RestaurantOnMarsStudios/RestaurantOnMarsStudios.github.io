@@ -6,11 +6,21 @@ permalink: /about/
 
 
 ### The Beginning
-Restaurant On Mars Studios was founded in the summer of 2018 by [Nicholas Bucher](http://www.nicholasbucher.com).
+
+Restaurant On Mars Studios was founded on **June 23rd, 2018** by [Nicholas Bucher](http://www.nicholasbucher.com).
+
+
 
 ### Vision
-The vision of Restaurant On Mars Studios is to make games that are fun to both make and play.   
-We wish to inspire creativity in our patrons with a hearty menu of the finest cooked games, and plenty of to-go boxes!
+
+The vision of Restaurant On Mars Studios is to make games that are **fun to both make and play**. 
+
+My hope is that this vision is maintained, and ROMS meets the challenge of balancing **developer satisfaction** with **holistic game quality** as it grows as a company in the future.
+
+
+### Company Motto
+
+*We wish to inspire creativity in our patrons with a hearty menu of the finest cooked games, and plenty of to-go boxes!*
 
 
 
