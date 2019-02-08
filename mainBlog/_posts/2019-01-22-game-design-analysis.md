@@ -1,8 +1,10 @@
 ---
-# layout: post
-# title:  "Analysis of Video Game Design - Difficulty"
-# date:   2019-01-22
-# categories: game design
+published: false
+
+layout: post
+title:  "Analysis of Video Game Design - Difficulty"
+date:   2019-01-22
+categories: game design
 ---
 
 
