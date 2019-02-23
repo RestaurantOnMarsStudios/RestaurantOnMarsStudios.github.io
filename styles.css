@@ -15,3 +15,7 @@ img {
     background-color: #EEE;
     border-radius: 10px;
 }
+
+a > img:hover {
+    opacity: .7;
+}

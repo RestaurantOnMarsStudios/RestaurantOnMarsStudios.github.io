@@ -48,7 +48,10 @@ If you want to meet up and talk about game development, I am in **Tuscaloosa, AL
 
 **Thanks for visiting!**  
 
-![profile](site-assets/profile.jpg)  
+<img src="/site-assets/profile.jpg" style="
+    border-radius: 200px;
+    padding: 0px;
+    border: 2px solid black;" alt="profile">
 
 **Nicholas Bucher,**   
 
@@ -58,11 +61,14 @@ If you want to meet up and talk about game development, I am in **Tuscaloosa, AL
 
 
 
----
+<br>
+<br>
 
 # Our Games
 
-## _BOXES: Drone Delivery (Google Play)_   
+<hr>
+
+## _Poodle Moon Jump (Google Play)_   
 <!-- <a href="https://play.google.com/store/apps/details?id=com.RestaurantOnMarsStudios.BOXESDroneDelivery&hl=en_US_" >
     <img src="\custom-theme-images/BoxesLogo-long.png" style="margin-bottom:10px;"/>
 </a>   -->
@@ -72,9 +78,10 @@ If you want to meet up and talk about game development, I am in **Tuscaloosa, AL
 Jump fast to avoid the dangerous Space Hedgehogs, Cosmic Bats, and Moon Moles that have arrived on your moon in **Poodle Moon Jump**. Upgrades like wings and space armor will help you in your mission.   
 
 
-How long can you survive as a space poodle?
+How long can you survive as a space poodle?   
+<br>
 
-
+--- 
 
 ## _BOXES: Drone Delivery (Google Play)_   
 <!-- <a href="https://play.google.com/store/apps/details?id=com.RestaurantOnMarsStudios.BOXESDroneDelivery&hl=en_US_" >
