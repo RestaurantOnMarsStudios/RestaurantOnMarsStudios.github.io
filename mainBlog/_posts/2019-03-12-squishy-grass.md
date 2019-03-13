@@ -5,7 +5,7 @@ date:   2019-03-12
 categories: shaders
 ---
 
-Here's what we'll be making!
+Here's what we'll be making:
 
 ![Single Position Vector (Using Object Distance)](/site-assets/blog-images-2019/grass-multi-position-object.gif)
 
@@ -89,11 +89,64 @@ The multi-position vector array technique involves passing the player's previous
 
 In addition, the intensity with which this effect is applied can be changed from linear to cubic to get a fast-in, slow-out effect. The [GLSL Grapher website](https://fordhurley.com/glsl-grapher/) helped to arrive at a good function for this.
 
-Here is the new C# code for passing in a vector array.
+Here is the new C# code for passing in a vector array. The reason why the *PWShiftRight()* and *PWPush()* functions are implemented here is because the shader wasn't accepting the array when I was using the System.Collections Queue class. I was getting an error saying that *the new array size of 20 did not match the previous array size of 1*. The solution to this for my version of Unity (2018.2.10f) is to use a fixed-size, global array in my C# program, and restart the Unity editor whenever I change this fixed array size. For further reading on passing vector arrays to shaders in Unity, including its limitations, see [Alan Zucconi's blog post on the topic](https://www.alanzucconi.com/2016/10/24/arrays-shaders-unity-5-4/) (I found this post to be still relevant, even though it is about Unity 5.4).
 
 
 ```c#
-
+public class Player : Monobehaviour {
+    Vector4[] playerWorldPosArray = new Vector4[20];
+    void Awake () {
+        // initialize the global array of player world positions
+        for (var i = 0; i < playerWorldPosArray.Length; i++) {
+            playerWorldPosArray[i] = new Vector4(
+                transform.position.x, 
+                transform.position.y, 
+                transform.position.z, 
+                1);
+        }
+        StartCoroutine(UpdateWorldPos());
+    }
+    IEnumerator UpdateWorldPos() {
+        while (true) {
+            // get the most recent player world position
+            var wp = new Vector4(
+                transform.position.x, 
+                transform.position.y, 
+                transform.position.z, 
+                1);
+            // dequeue the last position from the global position array
+            PWShiftRight(); 
+            // enqueue the new position on to the global position array
+            PWPush(wp);
+            // set our position array as a global shader variable -
+            // this way, other shaders can use it for free!
+            Shader.SetGlobalVectorArray("_PlayerWorldPos", playerWorldPosArray);
+            yield return new WaitForEndOfFrame();
+        }
+    }
+    // See the reasoning above for why queue operations are implemented here
+    // PWShiftRight() dequeues from the end of the global position array
+    void PWShiftRight() {
+        for(var i=playerWorldPosArray.Length-1; i>=1; i--) {
+            playerWorldPosArray[i] = playerWorldPosArray[i - 1];
+        }
+    }
+    // PWPush(v) enqueues v on to the start of the global position array
+    void PWPush(Vector4 v) { playerWorldPosArray[0] = v; }
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        // This draws the player position array in the Unity editor
+        Gizmos.color = Color.cyan - (Color.black * .5f);
+        for(var i=0; i<playerWorldPosArray.Length; i++) {
+            var pos = new Vector3(playerWorldPosArray[i].x, 
+                playerWorldPosArray[i].y, 
+                playerWorldPosArray[i].z);
+            Gizmos.DrawSphere(pos, .05f);
+        }
+    }
+#endif
+}
 ```
 
 
