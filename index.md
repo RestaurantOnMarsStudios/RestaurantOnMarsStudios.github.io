@@ -16,7 +16,7 @@ title: Home
 
 My hope is to eventually turn this website into a hub of sorts, where visitors can learn more about ROMS and the **behind-the-scenes** stories of how games are made. Future blog posts could include video game development material like game designs, development techniques, and other resources ✏️.
 
-_Feel free to send ideas for blog posts to [restaurantonmars@gmail.com](restaurantonmars@gmail.com)_
+**_Feel free to send ideas for blog posts or games to [restaurantonmars@gmail.com](restaurantonmars@gmail.com)_**
 
 <!-- ### Social Media
 
